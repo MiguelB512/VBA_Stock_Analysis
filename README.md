@@ -9,8 +9,6 @@ There is also some refactoring of code to increase the speed and effeciency of t
 
 ## Results 
 
----
-
 ### Analysis for 2017 stocks 
 
 ![2017 Message Box](https://user-images.githubusercontent.com/60283799/170143710-cca36925-8cee-4c0a-88e0-7f6200ac5837.PNG)
