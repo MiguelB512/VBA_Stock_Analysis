@@ -172,4 +172,4 @@ When it comes to refactoring, there are both pros and cons.
 
 When it comes to refactoring the code for this project, i didn't encounter too many of these pros and cons due to the fact that it was code that was written by me throughout the course of the module. I did learn alot from searching the internet and reading about for loops, conditionals and much more which was a huge help. This exercise taught me to not be complacent with the finished product because it could always be better. Refactoring will definitely be something that I use in future projects, not only code that I find online but also with code that I had previously written myself. 
 
-
+ 
