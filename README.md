@@ -80,7 +80,7 @@ After looping through the first loop, the second nested loop would do the grunt 
 ```
 <br />
 
-In Total, this took around 20 seconds for the analysis to complete. <br />
+In total, this took around 20 seconds for the analysis to complete. <br />
 Below is an image of both runtimes before refactoring. 
 
 <br />
