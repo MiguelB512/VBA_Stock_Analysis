@@ -36,7 +36,7 @@ For I = 0 To 11
        totalVolume = 0
 ```
 
-After looping through the first loop, the second nested loop would do the grunt work, looping through the tickers, storing the Daily Volume and Return, and then outputting it to the cell one ticker at a time. This works, however it slows the code down by having to do the process one ticker at a time. The second loop is shown below:
+After looping through the first loop, the second nested loop would do the grunt work, looping through the tickers, storing the Daily Volume and Return, and then outputting it to the cell one ticker at a time. This works, however it slows the code down by having to move one by one and outputting the values to the table as the code ran. The second loop is shown below:
 
 
 ```
@@ -91,7 +91,7 @@ Below is an image of both runtimes before refactoring.
 <br />
 
 
-The refactored code is similar but has a few changes to improve the efficiency. Instead of having the outputs be posted one by one as the code runs, the loop instead stores the values in the tickerIndex and outputs it at the end of the loop. Although there is still two loops, these are not nested loops and also the values are not being outputed directly after the loop, which is less computing for the script. The code is shown below:
+The refactored code is similar but has a few changes to improve the efficiency. Instead of having the outputs be posted one by one as the code runs, the loop instead stores the values in the tickerIndex and outputs them at the end of the loop. Although there is still two loops, these are not nested loops and also the values are not being outputed directly after the loop, which is less computing for the script. The code is shown below:
 
 ```
 For I = 2 To RowCount
@@ -144,8 +144,7 @@ For I = 2 To RowCount
 
 <br />
 
-This brought the run time down to about half of a second which is a 3233.3% decrease in time and would be quite beneficial if the source data was larger. 
-Below is a screenshot of the two run times after refactoring. 
+This brought the run time down to about half of a second which is a 3233.3% decrease in time and would is a great improvement now and would be even more beneficial if the source data was larger. Below is a screenshot of the two run times after refactoring. 
 
 ![FAST 2017 message](https://user-images.githubusercontent.com/60283799/170163717-4818a847-4512-4ae4-8944-a6242c0e0981.PNG)
 ![FAST 2018 message](https://user-images.githubusercontent.com/60283799/170163714-9e187d8d-8837-41fe-9a5e-5c55fcbaf69c.PNG)
@@ -153,47 +152,24 @@ Below is a screenshot of the two run times after refactoring.
 
 ## Summary 
 
-Code effeciency and order is very important in programming. A 3233.3% increase in speed is infinitely useful and always beneficial. Assuring that code is as smooth and concise as can be while still achieving the goal is the epitome of programming. 
+Code effeciency and order is very important in programming. A 3233.3% increase in speed is infinitely useful and makes a big difference. Assuring that code is as smooth and concise as can be while still achieving the goal is the epitome of programming. 
 
 When it comes to refactoring, there are both pros and cons. 
 
-Some Pros are 
+### Some Pros are: 
 - Coding can become much quicker thanks to refactoring code that someone has previously written. 
-- It can inspire you to change the code to be even quicker, more specific, or just be the missing puzzle piece that was needed
+- It can inspire you to change the code to be even faster, more specific, or just be the missing puzzle piece that was needed
 - For new coders, it's a good way to learn and experiment to fully understand how to properly or efficiently write code
 
-Some of the cons are 
+### Some Cons are:
 - If not detailed, it can be confusing to edit code that was written by someone else
 - If not appreciated, a programmer may just copy and paste without fully understanding the code and being able to implement it on their own 
+- When working in larger teams, refactoring may become confusing and make things slower in the end 
 
 <br />
 
-When it comes to refactoring the code for this project, i didn't encounter too many of these pros and cons due to the fact that it was code that was written by me throughout the course of the module. I did learn alot from searching the internet and reading about for loops, conditionals and much more which was a huge help. This exercise taught me to not be complacent with the finished product because it could always be better. Refactoring will definitely be something that i use in future projects, not only code that i find online but also with code that i had previously written myself. 
+### In Conclusion:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+When it comes to refactoring the code for this project, i didn't encounter too many of these pros and cons due to the fact that it was code that was written by me throughout the course of the module. I did learn alot from searching the internet and reading about for loops, conditionals and much more which was a huge help. This exercise taught me to not be complacent with the finished product because it could always be better. Refactoring will definitely be something that I use in future projects, not only code that I find online but also with code that I had previously written myself. 
 
 
